@@ -1,0 +1,6 @@
+pandas
+biopython
+sra-downloader
+matplotlib
+scikit-learn
+seaborn
