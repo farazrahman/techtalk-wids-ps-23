@@ -75,3 +75,8 @@ Link: https://www.ncbi.nlm.nih.gov/sra/?term=omicron+europe
 
 - Download the FastQC(a quality control tool for high thorughput sequence data) from https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 and run the quality check
+
+
+
+NOTE:
+- The NCBI websites provides many more ways to download and analyze the datasets. To explore more visit: `https://www.ncbi.nlm.nih.gov/home/tools/`
