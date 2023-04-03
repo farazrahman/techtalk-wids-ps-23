@@ -1,6 +1,3 @@
-import os
-import pandas as pd
-from Bio import Entrez
 import ssl
 import subprocess
 # ssl._create_default_https_context = ssl._create_unverified_context

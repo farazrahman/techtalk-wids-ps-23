@@ -1,5 +1,4 @@
 import pandas as pd
-import os
 
 
 def parse_fastq(input_file: str) -> pd.DataFrame:
@@ -17,17 +16,22 @@ def parse_fastq(input_file: str) -> pd.DataFrame:
         for lines in fastq_file:
             read_lines.append(lines.rstrip('\n'))
 
-    # break into groups of 4
+    # break into groups of 4 as a single sequence
     for line in range(0, len(read_lines), 4):
         single_sequence = read_lines[line:line + 4]
+
+        # checks if the sequence ID starts with the "@" character and if the length of the sequence reads and
+        # sequence quality are equal
         if single_sequence[0].startswith('@') and (len(single_sequence[1]) == len(single_sequence[3])):
             sequence_list.append(single_sequence)
         else:
             print(f'sequence mismatch with id starts with {single_sequence[0][0]}, '
                   f'read length {len(single_sequence[1])}, quality length {len(single_sequence[3])}')
 
+    # check the length of the sequence list to confirm all sequences are properly processed
     print(f"The count of reads is {len(sequence_list)}")
 
+    # convert the list of sequences into a dataframe
     sequence_df = pd.DataFrame(sequence_list, columns=['seq_id', 'seq_reads', 'id2', 'seq_quality'])
     print(f"printing the first few rows of {sequence_df.head()}")
 
