@@ -1,6 +1,26 @@
-# techtalk-wids-ps-23
+# techtalk-wids-pugetsound-23
 
-## ncbi_data_fetch
+<a href="https://imgur.com/egz18lh"><img src="https://i.imgur.com/egz18lh.png" title="source: imgur.com" /></a>
+
+## Abstract:
+
+We are all aware that data science, machine learning, and artificial intelligence are some of the most innovative and emerging fields of the 21st century, and that these fields will continue to be significant as long as there is trustworthy data available for analysis and application. However, it is not always simple to access data, and data scientists are frequently stymied by complex external APIs. This is due to a number of factors, the most prominent of which is that the focus of most data science courses is more on building complex machine learning and AI algorithms and less on identifying and retrieving data from credible sources that are accessible via various open source APIs. Bringing domain expertise into play further complicates the situation. The rules of data science in the real world differ from what is taught in online courses, and it goes without saying that employers are now seeking data scientists or data professionals who can collaborate with software engineers to write scalable and reproducible code in addition to building complex machine learning models. 
+
+## Proposal: 
+
+To address this issue, my proposal is to walk the audience through a data engineering pipeline that will allow them to easily access and retrieve DNA sequencing data from National Center for Biotechnology Information (NCBI’s) open source Sequence Read Archive (SRA) database and parse them in python for subsequent use in analytics. 
+
+## Importance of Sequencing data:
+
+DNA sequencing is useful in numerous fields, such as determining ancestry, diagnosing possible diseases, and identifying new Covid variants. As an illustration, I will demonstrate how to retrieve SARS-CoV-2 sequencing data from NCBI's sequencing database and evaluate its quality. 
+
+## Key Takeaways:
+
+Audience members will be able to comprehend the specifics of sequencing data and acquire a solid understanding of Biotechnology data parsing and its application. It will give our audience the ability and confidence to retrieve and analyze their data which they can replicate in any field they want to and build a portfolio of meaningful projects to showcase their skills to the employers. 
+
+
+
+## Topic: ncbi_data_fetch
 How to fetch and parse SRA data from NCBI for further use in analytics.
 
 #### This repository locates the First SARS-CoV-2- Omicron variant data in the NCBI's website, downloads the Sequence Read Archive (SRA) data using the following two methods:
